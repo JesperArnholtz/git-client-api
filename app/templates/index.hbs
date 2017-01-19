@@ -1,0 +1,8 @@
+<h1>GitHub Namshub</h1>
+<p>This is the github Explorer for all of our favorite devs</p>
+<ul>
+      
+  {{#each  model as |dev|}}
+    <li>{{#link-to 'user' dev.login}}{{dev.name}}{{/link-to}}</li>
+  {{/each}}
+</ul>

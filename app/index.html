@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>GitClient</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Github Club</title>
+  <link rel='stylesheet' href="{{rootURL}}assets/bootstrap.min.css" />
+  <link rel='stylesheet' href="{{rootURL}}assets/bootstrap-theme.min.css" />
+  <!--<link rel='stylesheet' href='stylesheets/overrides.css' />-->
+  <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+  
     {{content-for "head"}}
-
-    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link rel="stylesheet" href="{{rootURL}}assets/git-client.css">
-
     {{content-for "head-footer"}}
   </head>
   <body>
+    <div class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Github Club</a>
+      </div>
+    </div>
+  </div>
+    
     {{content-for "body"}}
 
+    <script src="{{rootURL}}assets/jquery-1.10.2.js"></script>
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/git-client.js"></script>
 

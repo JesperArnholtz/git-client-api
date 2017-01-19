@@ -20,5 +20,7 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+  //App.import('PATH');
+
   return app.toTree();
 };
