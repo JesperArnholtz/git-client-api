@@ -1,7 +1,7 @@
 {
   "name": "git-client",
   "version": "0.0.0",
-  "description": "Small description for git-client goes here",
+  "description": "Connecting to the GIT Api and show some awesome devs git's with Ember",
   "license": "MIT",
   "author": "",
   "directories": {

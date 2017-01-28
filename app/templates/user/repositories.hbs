@@ -1,0 +1,18 @@
+
+
+
+<ol class="breadcrumb">
+  <li>{{#link-to 'index'}}Devs{{/link-to}}</li>
+  <li>{{#link-to 'user' user}}{{user.name}}{{/link-to}}</li>
+  <li>Repositories</li>
+</ol>
+
+<table class="table table-striped">
+  {{#each  model as |repo|}}
+  <tr>
+    <td>
+      <h4>{{#link-to 'repository' this.login}}{{repo.name}}{{/link-to}}</h4>
+    </td>
+  </tr>
+  {{/each}}
+</table>
