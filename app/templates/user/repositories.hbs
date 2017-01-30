@@ -11,7 +11,7 @@
   {{#each  model as |repo|}}
   <tr>
     <td>
-      <h4>{{#link-to 'repository' this.login}}{{repo.name}}{{/link-to}}</h4>
+      <h4>{{#link-to 'user.repository' repo.repoName}}{{repo.name}}{{/link-to}}</h4>
     </td>
   </tr>
   {{/each}}

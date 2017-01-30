@@ -7,6 +7,6 @@ export default Ember.Route.extend({
     return Ember.$.getJSON(url);
   }
   //model: function (params) {
-  //  return Ember.$.getJSON(this.modelFor('user').repos_url + "/" + user.login + "/" + params.repoName); 
+  //  return Ember.$.getJSON(this.modelFor('user').repos_url + "/" + user.login + "/" + params.repoName);
   //}
 });
