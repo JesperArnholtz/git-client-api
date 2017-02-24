@@ -3,7 +3,7 @@
 
 <ol class="breadcrumb">
   <li>{{#link-to 'index'}}Devs{{/link-to}}</li>
-  <li>{{#link-to 'user' user}}{{user.name}}{{/link-to}}</li>
+  <li>{{#link-to 'user' repo.owner.login}}{{user.name}}{{/link-to}}</li>
   <li>Repositories</li>
 </ol>
 
@@ -11,7 +11,9 @@
   {{#each  model as |repo|}}
   <tr>
     <td>
-      <h4>{{#link-to 'user.repository' repo.repoName}}{{repo.name}}{{/link-to}}</h4>
+      {{log user}}
+      {{log repo}}
+      <h4>{{#link-to 'user.repositories.repository' repo.owner.login  repo.name}}{{repo.name}}{{/link-to}}</h4>
     </td>
   </tr>
   {{/each}}

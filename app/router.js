@@ -8,8 +8,10 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route("user", { path: "/users/:login" }, function() {
-    this.route('repositories');
-    this.route('repository', { path: "repositories/:repoName" } ); 
+    this.route('repositories', function() {
+      this.route('repository', { path: ":repoName" });
+    });
+    // this.route('repository',  );
   });
 
 });

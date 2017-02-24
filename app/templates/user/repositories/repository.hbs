@@ -1,0 +1,19 @@
+<ol class="breadcrumb">
+<li>{{#link-to 'index'}}Devs{{/link-to}}</li>
+<li>{{#link-to 'user' user}}{{user.name}}{{/link-to}}</li>
+<li>{{#link-to 'repositories'}}Repositories{{/link-to}}</li>
+<li class="active">{{name}}</li>
+</ol>
+<h1>{{name}} Repo</h1>
+<p>Description</p>
+<ul>
+<li>Language : {{language}}</li>
+<li>Watchers : {{watchers}}</li>
+<li>Open issues : {{watchers}}</li>
+<li>Clone : {{clone_url}}</li>
+<li>Web : <a {{bind-attr href=html_url}} target=_blank>{{html_url}}</a></li>
+</ul>
+
+<hr />
+
+{{outlet}}
